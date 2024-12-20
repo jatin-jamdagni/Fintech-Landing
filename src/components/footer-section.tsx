@@ -1,29 +1,28 @@
-
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Twitter, Facebook, Linkedin } from 'lucide-react'
-import { motion } from "framer-motion"
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Twitter, Facebook, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
 
 const footerLinks = [
   {
     title: "Sambhav Pay",
-    links: ["Home", "Examples", "Pricing", "Updates"]
+    links: ["Home", "Examples", "Pricing", "Updates"],
   },
   {
     title: "Resources",
-    links: ["Home", "Examples", "Pricing", "Updates"]
+    links: ["Home", "Examples", "Pricing", "Updates"],
   },
   {
     title: "About",
-    links: ["Home", "Examples", "Pricing", "Updates"]
-  }
-]
+    links: ["Home", "Examples", "Pricing", "Updates"],
+  },
+];
 
 const socialLinks = [
   { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" }
-]
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+];
 
 export function Footer() {
   return (
@@ -63,8 +62,8 @@ export function Footer() {
               Subscribe to our newsletter
             </h3>
             <p className="text-gray-400 mb-4">
-              Slate helps you see how many more days to work to reach your financial
-              goal.
+              Slate helps you see how many more days to work to reach your
+              financial goal.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Input
@@ -73,7 +72,7 @@ export function Footer() {
                 className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
               />
               <Button className="bg-[#F04444] hover:bg-[#F04444]/90 text-white">
-                Button
+                Submit
               </Button>
             </div>
           </motion.div>
@@ -98,6 +97,5 @@ export function Footer() {
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }
-
